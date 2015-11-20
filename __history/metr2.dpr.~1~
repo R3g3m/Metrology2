@@ -1,0 +1,15 @@
+program metr2;
+
+uses
+  Vcl.Forms,
+  MainUnit in '..\Metrologia1\MainUnit.pas' {MainForm},
+  RegExpr in '..\RegEx\Source\RegExpr.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TMainForm, MainForm);
+  Application.Run;
+end.

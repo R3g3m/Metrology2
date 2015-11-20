@@ -1,0 +1,61 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = #1052#1077#1090#1088#1080#1082#1072' '#1052#1072#1082'-'#1050#1077#1081#1073#1072'-'#1052#1072#1077#1088#1089#1072', '#1103#1079#1099#1082'  C'
+  ClientHeight = 410
+  ClientWidth = 547
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnOpenFile: TButton
+    Left = 8
+    Top = 14
+    Width = 153
+    Height = 25
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1092#1072#1081#1083' '#1089' '#1082#1086#1076#1086#1084
+    TabOrder = 0
+    OnClick = btnOpenFileClick
+  end
+  object btnStart: TButton
+    Left = 8
+    Top = 375
+    Width = 153
+    Height = 25
+    Caption = #1055#1088#1086#1080#1079#1074#1077#1089#1090#1080' '#1080#1079#1084#1077#1088#1077#1085#1080#1103
+    Enabled = False
+    TabOrder = 1
+    OnClick = btnStartClick
+  end
+  object memSource: TMemo
+    Left = 8
+    Top = 45
+    Width = 281
+    Height = 324
+    TabOrder = 2
+    OnChange = memSourceChange
+  end
+  object memResult: TMemo
+    Left = 303
+    Top = 45
+    Width = 234
+    Height = 324
+    Lines.Strings = (
+      '')
+    TabOrder = 3
+  end
+  object dlOpenFile: TOpenDialog
+    DefaultExt = '*.c'
+    Filter = 
+      #1060#1072#1081#1083' C/'#1057'++ (*.c, *.cpp)| *.c;*.cpp|'#1047#1072#1075#1086#1083#1086#1074#1086#1095#1085#1099#1081' '#1092#1072#1081#1083' (*.h, *.hpp' +
+      ')|*.h;*.hpp'
+    InitialDir = 'e:\'#1051#1072#1073#1099' 2 '#1082#1091#1088#1089'\'#1052#1077#1090#1088#1086#1083#1086#1075#1080#1103'\Metrologia2\'#1048#1089#1093#1086#1076#1085#1080#1082#1080' '#1085#1072' '#1057
+    Left = 216
+  end
+end
